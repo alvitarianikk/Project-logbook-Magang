@@ -1,0 +1,64 @@
+body {
+	margin:auto;
+	background-image:url(../img/bckglogin.jpg);
+	background-repeat:no-repeat;
+	background-size: 95% 720px;
+}
+
+.container{
+	width:500px;
+	height:400px;
+	text-align:center;
+	background-color:rgba(206,234,229,0.80);
+	border-radius:4px;
+	margin:auto;
+	margin-top:150px;
+	
+}
+.container img{
+	width:120px;
+	height:120px;
+	margin-top:-60px;
+	margin-bottom:30px;
+	
+}
+input[type="text"],input[type="password"]{
+	height:30px;
+	width:250px;
+	font-size:15px;
+	margin-bottom:20px;
+}
+
+.forminput::before{
+	
+	position:absolute;
+	padding-top:5px;
+	font-size:24px;
+}
+
+.btn-loging{
+	padding: 20px 45px;
+	color: rgba(8,70,100,0.94);
+	border-radius:5px;
+	border: none;
+	background-color:#DEEFEC;
+	border-bottom: 4px solid rgba(8,70,100,0.84);
+}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

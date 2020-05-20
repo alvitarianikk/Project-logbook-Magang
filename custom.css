@@ -1,0 +1,14 @@
+.navbar-default {
+	margin-bottom:0px;
+	background-color:#F2F5F5;
+	border-color:#F2F5F5;
+}
+.jumbotron {
+	background-image:url(../img/coba.jpg);
+	background-size:cover;
+	height:350px;
+	margin-bottom:0px;
+	}
+.coba {
+	background-color:#DEEFEE;
+	}
