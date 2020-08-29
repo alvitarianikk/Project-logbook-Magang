@@ -3,10 +3,6 @@
 <?php
 include 'koneksi1.php';
 $id= $_POST['id'];
-
-$tanggal=  $_POST["tanggal"];
-$bulan= $_POST["bulan"];
-$tahun=$_POST["tahun"];
 $waktuindo= $_POST["waktuindo"];
 $waktuus= $_POST["waktuus"];
 $nama = $_POST["nama"];
@@ -45,7 +41,7 @@ if ( $status == $perbaikanErr ){
 					?>
 					
 	<?php
-$query="UPDATE logbook SET tanggal='$tanggal',bulan='$bulan',tahun='$tahun',waktuindo='$waktuindo',tanggalnormal='$tanggalnormal',waktuus='$waktuus',nama='$nama',fasilitas='$fasilitas',peralatan='$peralatan',merk='$merk',bagianalat='$bagianalat',detailrusak='$detailrusak',perbaikan='$perbaikan',status='$status',indikator='$indikator' WHERE id='$id'";
+$query="UPDATE logbook SET tanggal='$tanggal',waktuindo='$waktuindo',tanggalnormal='$tanggalnormal',waktuus='$waktuus',nama='$nama',fasilitas='$fasilitas',peralatan='$peralatan',merk='$merk',bagianalat='$bagianalat',detailrusak='$detailrusak',perbaikan='$perbaikan',status='$status',indikator='$indikator' WHERE id='$id'";
 mysqli_query($koneksi, $query);
 		header('location: karyawanlogin.php');?>
 					<?php
@@ -54,11 +50,9 @@ mysqli_query($koneksi, $query);
     foreach ($logbook as $row){
         echo "<tr>
             <td>".$row['tanggal']."</td>
-			<td>".$row['bulan']."</td>
-			<td>".$row['tahun']."</td>
-            <td>".$row['waktuindo']."</td>
+			<td>".$row['waktuindo']."</td>
+			<td>".$row['tanggalnormal']."</td>
 			  <td>".$row['waktuus']."</td>
-              <td>".$row['tanggalnormal']."</td>
 			<td>".$row['nama']."</td>
               <td>".$row['fasilitas']."</td>
             <td>".$row['peralatan']."</td>
